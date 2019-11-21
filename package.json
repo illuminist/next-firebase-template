@@ -1,0 +1,13 @@
+{
+  "name": "next-firebase-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "firebase emulators:start",
+    "predeploy": "bash ./scripts/predeploy.sh",
+    "deploy": "firebase deploy"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
