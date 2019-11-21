@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "firebase emulators:start",
+    "dev": "concurrently 'firebase emulators:start' 'yarn workspace functions watch'",
     "predeploy": "bash ./scripts/predeploy.sh",
     "deploy": "firebase deploy"
   },
